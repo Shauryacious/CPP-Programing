@@ -1,0 +1,1 @@
+return cout<<arr[0]<<" ";
