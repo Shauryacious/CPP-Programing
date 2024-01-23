@@ -1,0 +1,5 @@
+#Factor of an Odd number are always themselves an odd number
+for ex: factors of 15 -> 1, 3, 5, 15
+
+but factors of even number can be both odd and even
+for ex: 10 -> 1, 2, 5, 10
