@@ -2,7 +2,7 @@
 using namespace std;
 
 int print(int n){
-    if(n==1) return;
+    if(n==1) return 1;
     int x = n + print(n-1);
     cout<<x;
 
