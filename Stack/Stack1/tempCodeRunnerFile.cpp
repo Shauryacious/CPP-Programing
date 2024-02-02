@@ -1,1 +1,2 @@
-cout<<x<<" ";
+  display(st);
+  cout<<endl;
