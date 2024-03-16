@@ -14,15 +14,17 @@ int main(){
 
     //ALGORITHM
     for(int i=0; i<n-1; i++){
+
+        //CALC MIN_IDX
         int min = INT_MAX;
         int min_idx = -1;
-        for(int j=i; j<n; j++){
-            // SEARCHING MINIMUM INDEX
+        for(int j=i; j<n; j++){ // SEARCHING MINIMUM INDEX
             if(arr[j]<min){
                 min = arr[j];
                 min_idx = j;
             }
         }
+        
         swap(arr[i], arr[min_idx]); 
     }
 

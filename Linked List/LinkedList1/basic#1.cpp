@@ -14,9 +14,8 @@ public:
 //DISPLAY LL NORMAL ITERATIVE SOLUTION -> Better soln
 void display(Node* head){
   Node* temp = head;
-  while(1){
+  while(temp){
     cout<<temp->val<<" ";
-    if(temp->next == NULL) break;
     temp = temp->next;
   }
 }
