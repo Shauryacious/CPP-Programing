@@ -1,6 +1,8 @@
 #include<iostream>
 #include<cmath>
 using namespace std;
+
+//! CLASS NODE
 class Node{
 public:
   int val;
@@ -13,14 +15,30 @@ public:
   }
 };
 
-void displayTree(Node* root){
+
+//! DFS -> Depth First Search - TRAVERSALS
+void preOrderdisplayTree(Node* root){ //Pre Order Traversal
   if(root == NULL) return;
   cout<<root->val<<" ";
-  displayTree(root->left);
-  displayTree(root->right);
+  preOrderdisplayTree(root->left);
+  preOrderdisplayTree(root->right);
 }
 
+void inOrderdisplayTree(Node* root){ //In Order Traversal
+  if(root == NULL) return;
+  inOrderdisplayTree(root->left);
+  cout<<root->val<<" ";
+  inOrderdisplayTree(root->right);
+}
 
+void postOrderdisplayTree(Node* root){ //Post Order Traversal
+  if(root == NULL) return;
+  postOrderdisplayTree(root->left);
+  postOrderdisplayTree(root->right);
+  cout<<root->val<<" ";
+}
+
+//! Size = No of Nodes in a Tree
 int size(Node* root){
   if(root == NULL) return 0;
   return 1 + size(root->left) + size(root->right);
@@ -70,7 +88,15 @@ int main(){
   c->left = f;
   c->right = g;
 
-  displayTree(a);
+  cout<<"Pre Order Traversal :    ";
+  preOrderdisplayTree(a);
+  cout<<endl;
+  cout<<"In Order Traversal :     ";
+  inOrderdisplayTree(a);
+  cout<<endl;
+  cout<<"Post Order Traversal :   ";
+  postOrderdisplayTree(a);
+
   cout<<endl<<size(a)<<endl;
   cout<<sum(a)<<endl;
   cout<<maxVal(a)<<endl;
