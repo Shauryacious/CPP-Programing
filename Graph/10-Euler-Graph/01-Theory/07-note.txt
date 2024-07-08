@@ -1,0 +1,9 @@
+1) In Eularian Circuit
+    -> Start from any node and you will come to an end there itself
+    -> All nodes will have even Degree
+
+
+2) While In Eularian Path
+    -> Start and End will not be same node
+    -> You cannot start from any node, only from the node which has odd degree will result in Eularian Path
+    -> Not all nodes will have even degree, only 2 nodes will have odd degree for it to be Eularian Path aka a Semi Eularian Graph

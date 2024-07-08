@@ -1,0 +1,6 @@
+if Eularian Path exists
+    return "Semi Eularian Graph"
+else if Eularian Circuit exists
+    return "Eularian Graph"
+else
+    return "Non Eularian Graph"
