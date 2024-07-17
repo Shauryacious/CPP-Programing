@@ -1,0 +1,8 @@
+Write Kruskal's Algorithm theory here
+1) Sort all the edges in ascending order of their weight. {u, v, wt} => T.C. O(ElogE)
+2) Pick the smallest edge. through a loop
+3) check if u and v are already joined edges or not, by find (by finding parent of u and v) 
+4) If u and v are not joined, then add this edge to the MST via Union of the vertices. 
+5) Repeat step 3 and 4 until all the vertices are connected.
+
+Watch at 9:06 on https://www.youtube.com/watch?v=3tgekNXWXsY&list=PLpIkg8OmuX-LZB9jYzbbZchk277H5CbdY&index=37

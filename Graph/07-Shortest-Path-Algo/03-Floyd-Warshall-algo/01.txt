@@ -1,0 +1,12 @@
+While Dijksta's algo is used to find the shortest path from a single source to Destination,
+Floyd-Warshall algo is used to find the shortest path between all pairs of vertices.
+
+T.C. = O(V^3) where V is the number of vertices in the graph.
+S.C. = O(V^2)
+
+Applications:
+1. Used in routing algorithms.
+2. Used in network routing protocols.
+3. Used in finding the shortest path between all pairs of vertices in a directed weighted graph.
+4. Used in finding the transitive closure of a graph.
+5. Used in detecting negative cycles in a graph.
